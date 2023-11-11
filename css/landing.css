@@ -41,13 +41,19 @@
   margin-bottom: 20px;
 }
 
+.products__card-area {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 .products__card {
   display: inline-block;
   text-align: center;
   width: 330px;
   height: 440px;
   padding: 20px;
-  margin: 40px;
+  margin: 20px 5px 20px 5px;
   border-radius: 10px;
   box-shadow: 0 5px 9px -1px;
   box-shadow: color rgba(0, 0, 0, 0.25);
