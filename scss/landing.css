@@ -1,0 +1,399 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* NAV BAR STYLING */
+.nav {
+  background: #fff0ed;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.nav__img {
+  height: 100%;
+}
+
+.nav__heading {
+  display: inline-block;
+  height: 100%;
+  width: auto;
+}
+
+.nav__title {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav__list {
+  display: inline-block;
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
+.nav__link {
+  color: #393939;
+  display: inline-block;
+  margin-left: 30px;
+  height: 50%;
+}
+
+.nav__link--color {
+  color: #5bacc3;
+}
+
+/* FONT STYLING */
+h1,
+h2 {
+  color: #393939;
+  font-size: 3.75rem;
+  font-weight: 300;
+  margin: 0px;
+  text-decoration: none;
+}
+
+h3,
+.nav__heading,
+.footer-heading {
+  color: #393939;
+  font-size: 2.063rem;
+  font-weight: 300;
+  margin: 0px;
+  text-decoration: none;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 1.313rem;
+  font-weight: 400;
+}
+
+p {
+  color: #393939;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* OTHER */
+.button-container {
+  position: relative;
+  width: 180px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-text {
+  text-decoration: none;
+  font-size: 1.313rem;
+  font-weight: 400;
+  color: #fff;
+  position: relative;
+  border: solid #393939 2px;
+  top: 0px;
+  left: 0px;
+  width: 180px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s;
+}
+
+.button-text:active {
+  top: 5px;
+  left: 5px;
+}
+
+.button-box {
+  background-color: #5bacc3;
+  width: 180px;
+  height: 50px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.button-box:hover {
+  cursor: pointer;
+}
+
+/* TOP BANNER STYLING */
+.banner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  background-color: #fff0ed;
+  padding: 40px;
+}
+
+.banner__left {
+  padding-left: 10%;
+  padding-right: 30%;
+}
+
+.banner__text {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* PRODUCTS STYLING */
+.products {
+  text-align: center;
+  background: #f7f7f7;
+  padding: 40px 20px 40px 20px;
+}
+
+.products__title {
+  margin-bottom: 20px;
+}
+
+.products__img {
+  height: 280px;
+}
+
+.products__price {
+  color: #5bacc3;
+  font-weight: 700;
+}
+
+.products__card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.products__card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  text-align: center;
+  width: 330px;
+  height: 440px;
+  margin: 20px 5px 20px 5px;
+  border-radius: 10px;
+  box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+}
+
+.products__card-top {
+  flex: 2;
+  padding: 20px;
+}
+
+.products__card-bottom {
+  background: #fff0ed;
+  flex: 1;
+  border-radius: 0px 0px 10px 10px;
+  padding: 20px;
+  display: flex;
+}
+
+.products__card-bottom-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.products__card-bottom-left p {
+  color: #909090;
+}
+
+.products__card-bottom-right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.products__view-all {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* DISCOUNT BANNER STYLING */
+.discount-section {
+  background: #fff;
+  height: auto;
+  padding: 20px;
+}
+
+.discount-section__grid-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.discount-section__grid-left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 500px;
+  align-content: center;
+  padding: 20px;
+}
+
+.discount-section__grid-left h2 {
+  margin-bottom: 20px;
+}
+
+.discount-section__logo-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.discount-section__logo {
+  width: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.discount-section__grid-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discount-section__grid-right-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.discount-section__grid-right-box {
+  background: url(/assets/images/coldbrewbackground.png);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.discount-section__grid-right-img-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  border: solid #5bacc3 5px;
+  position: absolute;
+}
+
+.discount-section__grid-right-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  position: relative;
+}
+
+.discount-section__grid-right-container:hover > .discount-section__grid-right-img {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.discount-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px 0px 150px 0px;
+}
+
+.discount-banner__box {
+  display: inline-block;
+  background-color: #393939;
+  width: 90%;
+  text-align: center;
+  margin: 0px;
+  padding: 20px;
+  animation: flash 2.5s ease-in-out infinite;
+}
+
+@keyframes flash {
+  0% {
+    background-color: #393939;
+  }
+  50% {
+    background-color: #5bacc3;
+  }
+  100% {
+    background-color: #393939;
+  }
+}
+.discount-banner__text {
+  font-size: 2.813rem;
+  font-weight: 400;
+  color: white;
+  margin: 0px;
+}
+
+.discount-banner__text--bold {
+  font-weight: 700;
+}
+
+/* FOOTER STYLING */
+.footer {
+  background-color: #fff0ed;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 40px 10% 40px 10%;
+  height: auto;
+  position: relative;
+}
+
+.footer__item {
+  padding: 20px;
+}
+
+.footer--bold {
+  font-weight: 700;
+}
+
+.footer__title {
+  margin-bottom: 20px;
+}
+
+.footer__logo {
+  display: inline-block;
+  width: 50px;
+}
+
+.footer__beans-right {
+  position: absolute;
+  opacity: 25%;
+  width: 120px;
+  left: -20px;
+  top: 20px;
+}
+
+.footer__beans-left {
+  position: absolute;
+  opacity: 25%;
+  width: 120px;
+  right: -20px;
+  bottom: 20px;
+}/*# sourceMappingURL=landing.css.map */

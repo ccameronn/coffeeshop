@@ -1,8 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0px;
   padding: 0px;
 }
@@ -13,6 +11,9 @@
   background: #fff0ed;
   height: auto;
   padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .nav__img {
@@ -25,9 +26,15 @@
   width: auto;
 }
 
+.nav__title {
+  text-decoration: none;
+  display: inline-block;
+}
+
 .nav__list {
   display: inline-block;
   list-style-type: none;
+  padding-bottom: 10px;
 }
 
 .nav__link {
@@ -44,7 +51,6 @@
 /* FONT STYLING */
 
 h1,
-.nav__heading,
 h2 {
   color: #393939;
   font-size: 3.75rem;
@@ -54,6 +60,7 @@ h2 {
 }
 
 h3,
+.nav__heading,
 .footer-heading {
   color: #393939;
   font-size: 2.063rem;
@@ -62,8 +69,7 @@ h3,
   text-decoration: none;
 }
 
-.nav__link,
-button {
+.nav__link {
   text-decoration: none;
   font-size: 1.313rem;
   font-weight: 400;
@@ -75,21 +81,52 @@ p {
   font-weight: 400;
 }
 
-.discount-text {
-  font-size: 2.813rem;
-  font-weight: 400;
+a {
+  text-decoration: none;
 }
 
 /* OTHER */
 
-button {
-  background-color: #5bacc3;
-  color: #fff;
-  border: 0px;
+.button-container {
+  position: relative;
   width: 180px;
   height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-button:hover {
+.button-text {
+  text-decoration: none;
+  font-size: 1.313rem;
+  font-weight: 400;
+  color: #fff;
+  position: relative;
+  border: solid #393939 2px;
+  top: 0px;
+  left: 0px;
+  width: 180px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s;
+}
+
+.button-text:active {
+  top: 5px;
+  left: 5px;
+}
+
+.button-box {
+  background-color: #5bacc3;
+  width: 180px;
+  height: 50px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.button-box:hover {
   cursor: pointer;
 }
